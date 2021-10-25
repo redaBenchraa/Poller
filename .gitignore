@@ -35,3 +35,21 @@ out/
 
 ### VS Code ###
 .vscode/
+# dependencies
+web-app/node_modules
+web-app/.pnp
+web-app.pnp.js
+web-app
+web-app# testing
+web-app/coverage
+web-app# production
+web-app/build
+web-app# misc
+web-app.DS_Store
+web-app.env.local
+web-app.env.development.local
+web-app.env.test.local
+web-app.env.production.local
+web-appnpm-debug.log*
+web-appyarn-debug.log*
+web-appyarn-error.log*
