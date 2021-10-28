@@ -1,0 +1,60 @@
+.circle {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 100%;
+}
+.red {
+  background-color: var(--red);
+}
+.green {
+  background-color: var(--green);
+}
+.actions {
+  display: flex;
+}
+.button {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.button:disabled,
+.button[disabled] {
+  border: 0px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+tr {
+  font-size: 1rem;
+}
+input {
+  padding: 0.5rem;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

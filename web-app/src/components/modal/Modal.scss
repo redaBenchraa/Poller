@@ -1,0 +1,47 @@
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--black);
+  height: calc(100vh);
+  width: 100%;
+  opacity: 0.8;
+}
+
+.modal {
+  box-shadow: var(--black) 0px 3px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  min-width: 15rem;
+  max-width: 30rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    .close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--black);
+      color: white;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+    .close:hover {
+      opacity: 1;
+    }
+  }
+}

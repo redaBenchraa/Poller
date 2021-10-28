@@ -1,0 +1,48 @@
+version: '3.0'
+services:
+  mongo:
+    container_name: mongo_container
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-mongo}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-mongo}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE:-mongo}
+    volumes:
+      - mongo:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - database
+    restart: unless-stopped
+
+  adminer:
+    container_name: adminer_container
+    image: adminer
+    restart: always
+    ports:
+      - "9000:9000"
+    networks:
+      - database
+
+  authentication:
+    image: quay.io/keycloak/keycloak:11.0.3
+    environment:
+      KEYCLOAK_USER: ${KEYCLOAK_USER:-admin}
+      KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD:-admin}
+    ports:
+      - "8080:8080"
+
+#  poller:
+#    image: com.code.poller:0.0.1-SNAPSHOT
+#    restart: on-failure
+#    depends_on:
+#      - mongo
+#    ports:
+#      - "8000:8000"
+
+networks:
+  database:
+    driver: bridge
+
+volumes:
+  mongo:

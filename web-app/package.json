@@ -7,14 +7,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@titelmedia/node-fetch": "^3.1.1",
     "@types/jest": "^24.9.1",
-    "@types/node": "^12.20.35",
-    "@types/react": "^16.14.19",
+    "@types/node": "^12.20.33",
+    "@types/react": "^16.14.17",
     "@types/react-dom": "^16.9.14",
-    "@types/react-redux": "^7.1.20",
+    "@types/react-redux": "^7.1.19",
+    "event-source-polyfill": "^1.0.25",
+    "i18next": "^21.3.2",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-redux": "^7.2.6",
+    "react-i18next": "^11.12.0",
+    "react-redux": "^7.2.5",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.6"
   },
@@ -38,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
   }
 }

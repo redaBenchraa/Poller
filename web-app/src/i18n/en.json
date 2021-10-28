@@ -1,0 +1,20 @@
+{
+  "Service health checker": "Service Health Checker",
+  "Settings": "Settings",
+  "Create": "Create",
+  "Edit": "Edit",
+  "Delete": "Delete",
+  "Name": "Name",
+  "Status": "Status",
+  "Creation time": "Creation time",
+  "Actions": "Actions",
+  "Url": "Url",
+  "English": "English",
+  "French": "French",
+  "Service deleted successfully": "Service deleted successfully",
+  "Service created successfully": "Service created successfully",
+  "Service edited successfully": "Service edited successfully",
+  "Error while deleting serice": "Error while deleting serice",
+  "Error while creating serice": "Error while creating serice",
+  "Error while editing serice": "Error while editing serice"
+}

@@ -1,0 +1,94 @@
+.snackbar {
+  visibility: hidden;
+  min-width: 16rem;
+  margin-left: -8rem;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.success {
+  background-color: var(--green);
+}
+.error {
+  background-color: var(--red);
+}
+.warning {
+  background-color: var(--yellow);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 2rem;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 2rem;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 2rem;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.close:hover {
+  opacity: 1;
+}

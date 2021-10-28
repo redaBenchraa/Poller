@@ -1,0 +1,14 @@
+.fields {
+  margin: 1rem;
+  font-size: 1rem;
+  .field {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    .value {
+      width: 8rem;
+      height: 1.3rem;
+      margin-left: 1rem;
+    }
+  }
+}

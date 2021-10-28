@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import serviceReducer from 'features/serviceList/serviceSlice';
+import appNotificationReducer from 'components/appNotification/appNotificationSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    services: serviceReducer,
+    appNotification: appNotificationReducer,
   },
 });
 

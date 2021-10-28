@@ -1,0 +1,28 @@
+:root {
+  --green: #5cb85c;
+  --red: #ea6655;
+  --yellow: #d8b61d;
+  --black: #3d3d3d;
+  --grey: #888888;
+  --dark-black: #131313;
+  --white: white;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+  .title {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem;
+  }
+  .settings {
+    padding: 1rem;
+    text-align: end;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

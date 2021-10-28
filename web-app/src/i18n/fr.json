@@ -1,0 +1,20 @@
+{
+  "Service health checker": "Etat des services",
+  "Settings": "Paramètres",
+  "Create": "Créer",
+  "Edit": "Modifier",
+  "Delete": "Supprimer",
+  "Name": "Nom",
+  "Status": "Statut",
+  "Creation time": "Date de création",
+  "Actions": "Actions",
+  "Url": "Url",
+  "English": "Anglais",
+  "French": "Français",
+  "Service deleted successfully": "Service supprimé avec succès",
+  "Service created successfully": "Service créé avec succès",
+  "Service edited successfully": "Service modifié avec succès",
+  "Error while deleting serice": "Erreur lors de la suppression du service",
+  "Error while creating serice": "Erreur lors de la creation du service",
+  "Error while editing serice": "Erreur lors de la modification du service"
+}
